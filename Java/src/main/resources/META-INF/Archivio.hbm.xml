@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping" package="com.corso.java.esercitazioni.hibernate">
+    <class name="Archivio">
+        <id type="java.lang.String" name="id"/>
+        <set name="artisti" table="artista">
+            <key><column name="fullName"/></key>
+            <one-to-many class="Artista"/>
+        </set>
+        <set name="brani" table="brano">
+            <key><column name="nome"/></key>
+            <one-to-many class="Brano"/>
+        </set>
+        <set name="cds" table="album">
+            <key><column name="nomeAlbum"/></key>
+            <one-to-many class="Album"/>
+        </set>
+        <set name="generi" table="genere">
+            <key><column name="nome"/></key>
+            <one-to-many class="Genere"/>
+        </set>
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping" package="com.corso.java.esercitazioni.hibernate">
+    <class name="Artista">
+        <id name="fullName"/>
+    </class>
+</hibernate-mapping>

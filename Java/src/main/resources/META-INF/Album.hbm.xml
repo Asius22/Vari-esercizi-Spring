@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping" package="com.corso.java.esercitazioni.hibernate">
+    <class name="Album">
+        <id type="java.lang.String" name="nomeAlbum"/>
+        <one-to-one name="artista" class="Artista" cascade="save-update"/>
+    </class>
+
+</hibernate-mapping>

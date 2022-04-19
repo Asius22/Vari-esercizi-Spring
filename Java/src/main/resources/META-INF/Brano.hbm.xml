@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping" package="com.corso.java.esercitazioni.hibernate">
+    <class name="Brano">
+        <id name="nome"/>
+        <one-to-one name="album" class="Album"/>
+        <one-to-one name="genere" class="Genere"/>
+    </class>
+</hibernate-mapping>
