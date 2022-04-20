@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 32px;
+  background-color: #fffff1;
+  border: 1px solid #41852c;
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.btn-cnt {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-cnt input {
+  background-color: #377e22;
+  color: #fffff1;
+  padding: 8px;
+}
+
+.error {
+  border-color: red;
+}
+
+input,
+label {
+  margin: 8px;
+}
