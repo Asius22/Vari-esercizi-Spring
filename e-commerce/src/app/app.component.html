@@ -1,0 +1,31 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <mat-toolbar color="primary">
+    <span>My Commerce</span>
+    <span class="example-spacer"></span>
+    <button
+      mat-icon-button
+      class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon"
+      [routerLink]="['product-list']"
+      mat-tooltip="lista prodotti"
+    >
+      <mat-icon>list</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon"
+      [routerLink]="['cart-list']"
+      mat-tooltip="carrello"
+    >
+      <mat-icon matBadge="{{ getLenght() }}" matBadgeColor="warn">
+        shopping_cart</mat-icon
+      >
+    </button>
+  </mat-toolbar>
+</div>
+
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>

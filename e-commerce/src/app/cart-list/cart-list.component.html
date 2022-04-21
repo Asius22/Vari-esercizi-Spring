@@ -1,0 +1,15 @@
+<mat-card *ngFor="let item of getCart()">
+  <mat-card-title> {{ item.name }} </mat-card-title>
+  <mat-card-content> {{ item.price }} </mat-card-content>
+</mat-card>
+
+<hr />
+
+<div *ngIf="isEmptyCart()" class="container">
+  <mat-card>
+    <mat-card-title>Totale: {{ price }} €</mat-card-title>
+  </mat-card>
+  <button mat-raised-button (click)="buy()" color="primary">Acquista</button>
+</div>
+
+<p class="emptyCart" *ngIf="!isEmptyCart()">Il carrello è Vuoto</p>

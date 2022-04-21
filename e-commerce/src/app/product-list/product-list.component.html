@@ -1,0 +1,8 @@
+<mat-card *ngFor="let p of products" class="product-container">
+  <mat-card-title> {{ p.name }} </mat-card-title>
+  <mat-card-actions>
+    <button mat-button (click)="showDescription(p)">Show description</button>
+    <button mat-button (click)="addToCart(p)">ADD TO CART</button>
+  </mat-card-actions>
+</mat-card>
+<router-outlet></router-outlet>

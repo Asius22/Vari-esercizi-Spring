@@ -1,0 +1,21 @@
+<!--
+<mat-card class="card">
+  <mat-card-title> {{ product.name }} </mat-card-title>
+  <mat-card-subtitle>
+    {{ product.description }} {{ product.price }}€</mat-card-subtitle
+  >
+  <mat-card-actions>
+    <button mat-button (click)="addToCart()">ADD TO CART</button>
+    <button mat-button (click)="goBack()">BACK</button>
+  </mat-card-actions>
+</mat-card>
+-->
+
+<div mat-dialog-content>
+  <h1 mat-dialog-title>{{ product.name }}</h1>
+  <p>{{ product.description }} {{ product.price }}€</p>
+</div>
+<div mat-dialog-actions align="center">
+  <button mat-button (click)="addToCart()">ADD TO CART</button>
+  <button mat-button (click)="close()">Close</button>
+</div>
