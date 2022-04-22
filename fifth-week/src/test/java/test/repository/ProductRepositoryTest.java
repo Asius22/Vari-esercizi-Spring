@@ -1,6 +1,6 @@
-package com.corso.java.test.repository;
+package test.repository;
 
-import com.corso.java.test.domain.Product;
+import test.domain.Product;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,6 +9,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import test.repository.ProductRepository;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.corso.java.test.service;
+package test.service;
 
 import java.util.List;
 
-import com.corso.java.test.domain.Product;
+import test.domain.Product;
 
 public interface ProductService {
 

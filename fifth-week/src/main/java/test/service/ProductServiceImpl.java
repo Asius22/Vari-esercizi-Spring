@@ -1,10 +1,10 @@
-package com.corso.java.test.service;
+package test.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.corso.java.test.domain.Product;
-import com.corso.java.test.repository.ProductRepository;
+import test.domain.Product;
+import test.repository.ProductRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

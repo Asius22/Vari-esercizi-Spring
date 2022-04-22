@@ -1,9 +1,9 @@
-package com.corso.java.test.controller;
+package test.controller;
 
 import java.util.List;
 
-import com.corso.java.test.domain.Product;
-import com.corso.java.test.service.ProductService;
+import test.domain.Product;
+import test.service.ProductService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package com.corso.java.test.domain;
+package test.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

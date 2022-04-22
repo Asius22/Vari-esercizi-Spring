@@ -1,4 +1,4 @@
-package com.corso.java.test;
+package com.corso.java.esercitazione;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
